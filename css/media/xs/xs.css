@@ -258,16 +258,19 @@ section .trending__rank:nth-of-type(2) {
   left: 60px;
 }
 
-section > div.join {
-  margin-bottom: 56px;
+section .reasons {
+  margin-bottom: 64px;
 }
 
-section > div.join > h2 {
-  color: white;
+section .reasons__title {
   font-size: 18px;
 }
 
-section > div.join > div.sora > div.card {
+section .reasons__grid {
+  --bs-gutter-y: 8px;
+}
+
+section .reasons__card {
   background: #1a2144;
   background: linear-gradient(
     145deg,
@@ -275,31 +278,27 @@ section > div.join > div.sora > div.card {
     rgba(30, 22, 41, 1) 52%,
     rgba(32, 16, 28, 1) 100%
   );
-  margin-top: 12px;
 }
 
-section > div.join > div.sora > div.card > div.card-body {
-  height: auto;
-  padding-top: 3px;
-  padding-bottom: 10px;
-}
-
-section > div.join > div.sora > div.card > div.card-body > h3 {
+section .card-title {
   font-size: 20px;
-  color: white;
-}
-
-section > div.join > div.sora > div.card > div.card-body > p {
-  color: rgba(255, 255, 255, 0.7);
   margin-top: 8px;
 }
 
-section > div.join > div.sora > div.card > div.svg {
-  margin-bottom: 10px;
+section .card-text {
+  color: #ffffffb3;
+  margin-top: 8px;
 }
 
-section > div.join > div.sora > div.card > div.svg > svg {
-  margin-right: 10px;
+section .reasons__card-icon {
+  margin: 25px 0 8px;
+  position: relative;
+  right: -12px;
+}
+
+section .reasons__card-icon svg {
+  width: 63.36px;
+  height: 63.36px;
 }
 
 .accord {
