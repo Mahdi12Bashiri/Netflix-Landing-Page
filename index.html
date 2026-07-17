@@ -19,31 +19,31 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="position-relative w-100">
         <div
-          class="all d-flex flex-row flex-nowrap justify-content-between col-12 z-3"
+          class="header__nav d-flex flex-row flex-nowrap justify-content-between align-items-center col-12 z-3 position-absolute start-0 top-0 w-100"
         >
-          <div class="first col-6">
+          <div class="header__logo col-6">
             <img
               src="./images/header/imgi_2_Netflix_Logo_PMS.png"
               class="img-fluid"
-              alt=""
+              alt="Netflix Logo"
             />
           </div>
+
           <div
-            class="second d-flex flex-row col-6 justify-content-end position-relative"
+            class="header__actions d-flex flex-row col-6 justify-content-end position-relative"
           >
-            <div class="avl d-flex align-items-center">
-              <div class="btn-group">
+            <div class="header__lang-wrapper d-flex align-items-center">
+              <div class="btn-group h-100">
                 <button
                   type="button"
-                  class="btn rounded-1"
+                  class="btn rounded-1 text-white d-flex justify-content-center align-items-center h-100"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="position-relative"
                     viewBox="0 0 16 16"
                     width="16"
                     height="16"
@@ -60,10 +60,9 @@
                       fill="currentColor"
                     />
                   </svg>
-                  <span>English</span>
+                  <span class="d-sm-block d-none">English</span>
                   <i
-                    class="fa-solid fa-caret-down position-relative"
-                    style="color: #ffffff"
+                    class="fa-solid text-white fa-caret-down position-relative"
                   ></i>
                 </button>
                 <ul class="dropdown-menu">
@@ -72,60 +71,83 @@
                 </ul>
               </div>
             </div>
-            <div class="dvm d-flex align-items-center">
-              <button type="button" class="btn rounded-1 fa-2">Sign In</button>
+            <div class="header__auth d-flex align-items-center">
+              <a href="#" class="header__sign-in btn text-white rounded-1 fa-2">
+                Sign In
+              </a>
             </div>
           </div>
         </div>
-        <div class="images d-inline-block">
+
+        <div class="header__bg d-block position-relative w-100 overflow-hidden">
           <img
             src="./images/header/imgi_44_NL-en-20250721-TRIFECTA-perspective_5332928e-5777-4d3a-b6bb-fe1634244ce1_small.jpg"
-            class="d-block img-fluid z-n1 overflow-hidden"
-            alt=""
+            class="d-block w-100 img-fluid z-n1 overflow-hidden"
+            alt="Netflix background"
           />
         </div>
-        <div class="front-of-image position-absolute">
+
+        <div
+          class="header__hero position-absolute start-50 translate-middle w-100 z-2"
+        >
           <div
-            class="kol d-flex flex-column align-content-center justify-content-center ms-auto me-auto"
+            class="hero__content d-flex flex-column align-items-center justify-content-center mx-sm-auto"
           >
-            <h1 class="fw-bold text-center">
+            <h1 class="fw-bold text-white text-center">
               Unlimited films, series and more
             </h1>
-            <p class="text-center fw-medium">
+            <p class="text-center text-white fw-medium">
               Starts at €8.99. Cancel at any time.
             </p>
-            <h3 class="text-center mb-0">
+            <h3 class="text-center text-white mb-0 fw-normal">
               Ready to watch? Enter your email to create or restart your
               membership.
             </h3>
-            <form class="d-flex">
+
+            <form
+              class="d-flex flex-sm-row flex-column justify-content-center align-items-center"
+            >
               <div class="form-group">
                 <input
                   type="email"
-                  class="form-control flex-grow-1"
+                  class="form-control flex-grow-1 text-white"
                   id="email"
                   aria-describedby="emailHelp"
                   placeholder=" "
                 />
-                <label for="email">Email address</label>
+                <label for="email" class="fw-normal">Email address</label>
               </div>
               <button
                 type="submit"
-                class="btn fw-bold d-flex flex-nowrap align-items-center justify-content-center"
+                class="btn fw-bold d-flex flex-nowrap text-white align-items-center justify-content-center"
               >
                 <span class="position-relative">Get Started</span>
-                <i
-                  class="fa-solid fa-angle-right position-relative"
-                  style="color: #ffffff"
-                ></i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
               </button>
             </form>
           </div>
         </div>
+
+        <div class="curve-divider">
+          <div class="curve-divider__fade"></div>
+        </div>
       </header>
       <section>
         <div class="trending">
-          <h2 class="trending__title mt-4">Trending now</h2>
+          <h2 class="trending__title text-white mt-4">Trending Now</h2>
           <div class="trending__slider">
             <div class="swiper trending__swiper">
               <div class="swiper-wrapper">
@@ -134,71 +156,71 @@
                     src="./images/slide/imgi_32_AAAABRhpHnfh6ia4QcotnBIjOTFL15LZcxTPjXf5VFU_E_ayrXSswVPM_vAfqrmSoUqf-gC_bRjsC6918GtEasl95dPq6PmppVAHtndE5xrFBIzsX0JVN6c9w-0AVT1lkdh3b6Xa.webp"
                     alt=""
                   />
-                  <i class="fa-solid fa-1 fa-2xl trending__rank text-light"></i>
+                  <i class="fa-solid fa-1 fa-2xl trending__rank text-white"></i>
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="./images/slide/imgi_33_AAAABaW57jWqw0Gs9gqgmW816THwyNfPqphIiruQRFy9KXtt9PTPJpB4kzDKriPcpNjPKCj0itu1Yfjl-CR8rGEokBHPKE4O9lZQHXHRRpUHEelwoKk8lOf4gqlws-HnR2iZeSk4.webp"
                     alt=""
                   />
-                  <i class="fa-solid fa-2 fa-2xl trending__rank text-light"></i>
+                  <i class="fa-solid fa-2 fa-2xl trending__rank text-white"></i>
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="./images/slide/imgi_34_AAAABfQbkxRwQV_zSeEDI92Hhu86ttq6vTI-NPSom5LdKyBMDQnH1igsOb6RDax9ISrNh5kO1_moHkhPGwegaKDB6vjbSWkpcddy-AGeaMkLfCDuBReX6VSfydIvc-9dldHeD-dw.webp"
                     alt=""
                   />
-                  <i class="fa-solid fa-3 fa-2xl trending__rank text-light"></i>
+                  <i class="fa-solid fa-3 fa-2xl trending__rank text-white"></i>
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="./images/slide/imgi_35_AAAABau99jE0gNDoQG_3ZtXieksTYzSK_AnGvJ3UVmgUY920laV2xIe_w8PWHkYOKlZVylzTGtJ-EO8ajg6Ydq3TLMirxdqQDFngplQAe0MMfsdg1Fsyux8Ar8-6HDXo0AnSJtUS.webp"
                     alt=""
                   />
-                  <i class="fa-solid fa-4 fa-2xl trending__rank text-light"></i>
+                  <i class="fa-solid fa-4 fa-2xl trending__rank text-white"></i>
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="./images/slide/imgi_36_AAAABeu1SJZ1g3DGS_4xr2HFaFvq_0WuueYJ-UeZeRfAk4t7ajt_FWTKPDRwdGnF5vb2ejLHzZ9yyzrURGX6nVBoHkrY5s1Uk8w5yqRXi2c4WqWBiG0D06YxM9UUGWWehcFpHZYT.webp"
                     alt=""
                   />
-                  <i class="fa-solid fa-5 fa-2xl trending__rank text-light"></i>
+                  <i class="fa-solid fa-5 fa-2xl trending__rank text-white"></i>
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="./images/slide/imgi_37_AAAABQJzU5dX0-WkS5xCik1fiwAH-Uw9xuv-DDIq_AS8xEH9l5_n1tfPDiaiHlfKJKhfghzjS80e0PxsJ7SPIyFYpG3Tpw8WZ7LQ8NOTD_-h5ZPVQs0iDVCRMbfMxGKNTy-9CZCz.webp"
                     alt=""
                   />
-                  <i class="fa-solid fa-6 fa-2xl trending__rank text-light"></i>
+                  <i class="fa-solid fa-6 fa-2xl trending__rank text-white"></i>
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="./images/slide/imgi_38_AAAABeysJ_o0Fqo2Esnk8H3hp3V1VarIGpeg_GoiaL3A4_BLVb29OEEM1b17gQxKFblxZaEl42kzUG8QkRINoZ4HHxAN8N-WoN_YF_fcPYgiIiq03s81yru4DEvGn7SiPnW55-JK.webp"
                     alt=""
                   />
-                  <i class="fa-solid fa-7 fa-2xl trending__rank text-light"></i>
+                  <i class="fa-solid fa-7 fa-2xl trending__rank text-white"></i>
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="./images/slide/imgi_39_AAAABcrhAaNZU6tXbpVoi9LpbMZmjZX22ZfuOwNmuPy5i4quoB8cWiO-67vbTk07rZyX5YtKKci5c0XoFHJ1vphlx0Rau-hgCpnzEfMORMer4uPuTytZw3q4AMK38cPtc4fjKe2e.webp"
                     alt=""
                   />
-                  <i class="fa-solid fa-8 fa-2xl trending__rank text-light"></i>
+                  <i class="fa-solid fa-8 fa-2xl trending__rank text-white"></i>
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="./images/slide/imgi_40_AAAABfrQ-ytQxZb4vAuUegqLRC6Mzo4qEMKBNKiYSsEqK16hUyXOUO2f7CZchxO_b4lhknmpf0C2ocJMYF1jChy3YpV3M5Osq7oVADhGKdJWQyaHA50EtvmM0TdxspGTAbQQHctr.webp"
                     alt=""
                   />
-                  <i class="fa-solid fa-9 fa-2xl trending__rank text-light"></i>
+                  <i class="fa-solid fa-9 fa-2xl trending__rank text-white"></i>
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="./images/slide/imgi_41_AAAABdwDhdAK4uS8hCbonu5eoSLktc3sgBGRlhcHbjRu9cyztkpxqnmf35x7Nc839uii5pLB2ky2ucZneJzN6qadmK2DZNmH8CHqaQI8gtdjGCSOz-jEChvR02bFCUPLaeRaAveL.webp"
                     alt=""
                   />
-                  <i class="fa-solid fa-1 fa-2xl trending__rank text-light"></i>
-                  <i class="fa-solid fa-0 fa-2xl trending__rank text-light"></i>
+                  <i class="fa-solid fa-1 fa-2xl trending__rank text-white"></i>
+                  <i class="fa-solid fa-0 fa-2xl trending__rank text-white"></i>
                 </div>
               </div>
               <div class="swiper-button-next"></div>
@@ -242,10 +264,9 @@
             });
           </script>
         </div>
+
         <div class="reasons">
-          <h2 class="reasons__title text-white mb-3">
-            More reasons to join
-          </h2>
+          <h2 class="reasons__title text-white mb-3">More Reasons to Join</h2>
 
           <div class="reasons__grid row g-xl-3">
             <div class="col-12 col-lg-6 col-xl-3 d-flex">
@@ -966,6 +987,7 @@
             </div>
           </div>
         </div>
+
         <div class="accord mt-5">
           <div class="faq-container">
             <h2 class="mb-3">Frequently Asked Questions</h2>
@@ -1243,19 +1265,21 @@
             </div>
           </div>
         </div>
+
         <div class="sign-up text-center">
-          <h3 class="text-sm-center text-start">
+          <h3 class="signup__title text-sm-center fs-6 text-white text-start">
             Ready to watch? Enter your email to create or restart your
             membership.
           </h3>
-          <div class="in2 text-center">
+
+          <div class="signup__content text-center">
             <form
-              class="form-inline d-xl-flex d-lg-flex d-sm-grid justify-content-xl-center justify-content-lg-center"
+              class="signup__form mt-3 d-xl-flex d-lg-flex d-sm-grid justify-content-xl-center justify-content-lg-center"
             >
-              <div class="form-group">
+              <div class="signup__field position-relative form-group">
                 <input
                   type="email"
-                  class="form-control flex-grow-1"
+                  class="form-control text-white flex-grow-1"
                   aria-describedby="emailHelp"
                   id="email"
                   placeholder=" "
@@ -1264,9 +1288,11 @@
               </div>
               <button
                 type="submit"
-                class="btn fw-bold d-flex flex-nowrap flex-row align-item-center"
+                class="signup__button btn fw-bold d-flex flex-nowrap flex-row align-item-center"
               >
-                <span class="position-relative"> Get Started </span>
+                <span class="signup__button-text position-relative">
+                  Get Started
+                </span>
                 <i
                   class="fa-solid fa-angle-right position-relative"
                   style="color: #ffffff"
