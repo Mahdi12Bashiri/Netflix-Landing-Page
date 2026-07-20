@@ -105,7 +105,7 @@
             </h3>
 
             <form
-              class="d-flex flex-sm-row flex-column justify-content-center align-items-center"
+              class="d-flex flex-md-row flex-column justify-content-center align-items-center"
             >
               <div class="form-group">
                 <input
@@ -118,7 +118,7 @@
                 <label for="email" class="fw-normal">Email address</label>
               </div>
               <button
-                type="submit"
+                type="button"
                 class="btn fw-bold d-flex flex-nowrap text-white align-items-center justify-content-center"
               >
                 <span class="position-relative">Get Started</span>
@@ -128,7 +128,6 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-6"
                 >
                   <path
                     stroke-linecap="round"
@@ -990,10 +989,10 @@
 
         <div class="accord mt-5">
           <div class="faq-container">
-            <h2 class="mb-3">Frequently Asked Questions</h2>
+            <h2 class="mb-3 text-white">Frequently Asked Questions</h2>
 
             <div class="accordion accordion-flush" id="netflixFaqAccordion">
-              <div class="accordion-item text-white">
+              <div class="accordion-item bg-transparent text-white">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed text-white shadow-none d-flex justify-content-between align-items-center"
@@ -1032,14 +1031,14 @@
                     originals, and more. Watch as much as you want, anytime you
                     want.
                     <br /><br />
-                    <a href="#" class="text-white"
+                    <a href="#" class="text-white text-decoration-underline"
                       >Check out some of our content</a
                     >
                   </div>
                 </div>
               </div>
 
-              <div class="accordion-item text-white">
+              <div class="accordion-item bg-transparent text-white">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed text-white shadow-none d-flex justify-content-between align-items-center"
@@ -1085,7 +1084,7 @@
                 </div>
               </div>
 
-              <div class="accordion-item text-white">
+              <div class="accordion-item bg-transparent text-white">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed text-white shadow-none d-flex justify-content-between align-items-center"
@@ -1127,7 +1126,7 @@
                 </div>
               </div>
 
-              <div class="accordion-item text-white">
+              <div class="accordion-item bg-transparent text-white">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed text-white shadow-none d-flex justify-content-between align-items-center"
@@ -1175,7 +1174,7 @@
                 </div>
               </div>
 
-              <div class="accordion-item text-white">
+              <div class="accordion-item bg-transparent text-white">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed text-white shadow-none d-flex justify-content-between align-items-center"
@@ -1266,7 +1265,7 @@
           </div>
         </div>
 
-        <div class="sign-up text-center">
+        <div class="signup text-center">
           <h3 class="signup__title text-sm-center fs-6 text-white text-start">
             Ready to watch? Enter your email to create or restart your
             membership.
@@ -1274,12 +1273,12 @@
 
           <div class="signup__content text-center">
             <form
-              class="signup__form mt-3 d-xl-flex d-lg-flex d-sm-grid justify-content-xl-center justify-content-lg-center"
+              class="signup__form mt-3 d-flex flex-lg-row flex-column justify-content-center align-items-sm-center align-items-start"
             >
               <div class="signup__field position-relative form-group">
                 <input
                   type="email"
-                  class="form-control text-white flex-grow-1"
+                  class="signup__input form-control text-white flex-grow-1"
                   aria-describedby="emailHelp"
                   id="email"
                   placeholder=" "
@@ -1287,16 +1286,25 @@
                 <label for="email">Email address</label>
               </div>
               <button
-                type="submit"
-                class="signup__button btn fw-bold d-flex flex-nowrap flex-row align-item-center"
+                type="button"
+                class="signup__button btn text-white fw-bold d-flex flex-nowrap flex-row justify-content-center align-items-center"
               >
                 <span class="signup__button-text position-relative">
                   Get Started
                 </span>
-                <i
-                  class="fa-solid fa-angle-right position-relative"
-                  style="color: #ffffff"
-                ></i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
               </button>
             </form>
           </div>
@@ -1307,6 +1315,7 @@
           <p class="d-inline-block m-0">
             <a href="">Questions? Contact us.</a>
           </p>
+
           <div class="kol">
             <nav>
               <ul class="p-0 m-0 d-grid">
@@ -1333,12 +1342,13 @@
             </nav>
           </div>
         </div>
+
         <div class="click">
           <div class="avl d-inline-block">
             <div class="btn-group">
               <button
                 type="button"
-                class="btn rounded-1"
+                class="btn text-white rounded-1"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -1374,9 +1384,11 @@
             </div>
           </div>
         </div>
+
         <div class="once d-inline-block">
           <p class="m-0">Netflix Netherlands</p>
         </div>
+
         <div class="end">
           <span
             >This page is protected by Google reCAPTCHA to ensure you're not a

@@ -42,10 +42,6 @@ div.wrapper {
   cursor: default;
 }
 
-.header__lang-wrapper .btn:focus {
-  outline: 2px solid white;
-}
-
 .header__lang-wrapper .btn svg {
   width: 1rem;
   height: 1rem;
@@ -75,40 +71,12 @@ div.wrapper {
   width: 100%;
 }
 
-.header__lang-wrapper .dropdown-menu .dropdown-item:focus,
-.header__lang-wrapper .dropdown-menu .dropdown-item:active {
-  background-color: #2776e5 !important;
-  color: #ffffff !important;
-}
-
-.header__lang-wrapper .btn:focus,
-.header__lang-wrapper .btn:active,
-.header__lang-wrapper .btn[aria-expanded="true"] {
-  color: #ffffff !important;
-  background-color: #00000048 !important;
-  border-color: #808080b3 !important;
-  box-shadow: none !important;
-}
-
-.header__lang-wrapper .btn:focus i,
-.header__lang-wrapper .btn:focus svg {
-  color: #ffffff !important;
-}
-
 .header__auth .header__sign-in {
   background-color: #e50914;
   font-size: 15px;
   font-weight: 500;
   padding: 4px 1rem;
   margin-left: 12px;
-}
-
-.header__auth .header__sign-in:focus,
-.header__auth .header__sign-in:active,
-.header__auth .header__sign-in:focus-visible {
-  background-color: #a3161d;
-  border-color: #a3161d;
-  box-shadow: none;
 }
 
 .header__bg::after {
@@ -122,7 +90,7 @@ div.wrapper {
     rgba(0, 0, 0, 0.4) 30%,
     rgba(0, 0, 0, 0.65) 50%,
     rgba(0, 0, 0, 0.8) 65%,
-    rgba(0, 0, 0, 10) 100%
+    rgba(0, 0, 0, 1) 100%
   );
 }
 
@@ -183,36 +151,12 @@ div.wrapper {
   pointer-events: none;
 }
 
-.header__hero .hero__content form .form-group input:focus {
-  background-color: #00000048 !important;
-  color: white !important;
-  box-shadow: none !important;
-  border: 2px solid white !important;
-}
-
-.header__hero .hero__content form .form-group input:focus + label,
-.header__hero
-  .hero__content
-  form
-  .form-group
-  input:not(:placeholder-shown)
-  + label {
-  top: 5px;
-  transform: translateY(0);
-  font-size: 12px;
-}
-
-.header__hero .hero__content form .form-group input::placeholder {
-  color: #ffffffb3;
-  opacity: 1;
-}
-
 .header__hero .hero__content form .btn {
   background-color: #e50914;
   font-size: 24px;
-  padding: 8px 1rem;
+  padding: 12px 24px;
   height: 56px;
-  margin-left: 8px;
+  margin-left: 0.5rem;
   flex-shrink: 0;
 }
 
@@ -290,7 +234,7 @@ div.wrapper {
   border-radius: 50%;
   border-top: 4px solid rgba(255, 47, 71, 0.6);
   box-shadow:
-    0 -1px 8px 1px rgba(255, 24, 90, 0.35),
+    0 -1px 0.5rem 1px rgba(255, 24, 90, 0.35),
     0 -1px 3px 0px rgba(255, 100, 140, 0.3);
   background: transparent;
   z-index: 3;
@@ -314,7 +258,7 @@ section {
   align-items: center;
   width: auto;
   max-width: 224px;
-  padding: 8px 22px;
+  padding: 0.5rem 22px;
 }
 
 .swiper-slide img {
@@ -388,23 +332,19 @@ section .reasons__card-icon {
 }
 
 .accord .faq-container h2 {
-  color: white;
   font-size: 24px;
 }
 
 .accord .faq-container .accordion-item {
-  margin-bottom: 8px;
-  background-color: transparent;
+  margin-bottom: 0.5rem;
   border: none;
 }
 
 .accord .faq-container .accordion-button {
   background-color: #2d2d2d;
-  color: white;
   font-size: 24px;
   min-height: 72px;
   padding: 24px;
-  border-radius: 0 !important;
 }
 
 .accord .faq-container .accordion-button::after {
@@ -436,91 +376,62 @@ section .reasons__card-icon {
   border-color: transparent;
 }
 
-.accord .faq-container .accordion-body {
+.accord .faq-container .accordion-collapse .accordion-body {
   background-color: #2d2d2d;
-  color: white;
   font-size: 24px;
   padding: 24px;
-  padding-top: 8px;
 }
 
-.accord .faq-container .accordion-body a {
-  color: white;
-  font-size: 24px;
-  text-decoration: underline;
-}
-
-.sign-up {
+.signup {
   margin-bottom: 4rem;
 }
 
-.sign-up .signup__content form {
+.signup__content form {
   height: 56px;
 }
 
-section > div.sign-up > div.in2 > form > div.form-group > input {
+.signup__field {
+  width: 100%;
+  max-width: 562px;
+}
 
-  padding: 24px 1rem 8px;
-  width: 561.76px;
-  background-color: #0f0f0f;
+.signup__input {
+  width: 100%;
+  padding: 24px 1rem 0.5rem;
+  background-color: #0f0f0f !important;
   border: 1px solid #414141;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 1000px #1c2432 inset !important;
-  -webkit-text-fill-color: #fff !important;
-  border: 1px solid #414141 !important;
-  transition: background-color 9999s ease-in-out 0s;
-}
-
-section > div.sign-up > div.in2 > form > div.form-group > input:focus {
-  border: 2px solid white;
-}
-
-section > div.sign-up > div.in2 > form > div.form-group > input:focus + label,
-section
-  > div.in
-  > div.in2
-  > form
-  > div.form-group
-  > input:not(:placeholder-shown)
-  + label {
-  top: 8px;
+.signup__input:focus + label,
+.signup__input:not(:placeholder-shown) + label {
+  top: 0.5rem;
   transform: translateY(0);
   font-size: 12px;
 }
 
-section > div.sign-up > div.in2 > form > div.form-group > label {
+.signup__form label {
   position: absolute;
   left: 17px;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffffb3;
   transition: 0.25s ease;
   pointer-events: none;
 }
 
-section > div.sign-up > div.in2 > form > button {
-  background-color: #e50914;
-  color: white;
-  font-size: 1.45rem;
+.signup__button {
+  background-color: #e50914 !important;
+  font-size: 24px;
   padding: 12px 24px;
   height: 56px;
-  margin-left: 8px;
+  margin-left: 0.5rem;
+  flex-shrink: 0;
 }
 
-section > div.sign-up > div.in2 > form > button > span {
-  bottom: 3px;
-}
-
-section > div.sign-up > div.in2 > form > button > i {
+.signup__button svg {
   width: 24px;
   height: 24px;
   margin-left: 12px;
-  top: 5px;
 }
 
 footer {
@@ -562,7 +473,6 @@ footer > div.click > div.avl {
 
 footer > div.click > div.avl > div.btn-group > button {
   background-color: #0000008e;
-  color: white;
   font-size: 15px;
   font-weight: 500;
   padding: 4px 14px;

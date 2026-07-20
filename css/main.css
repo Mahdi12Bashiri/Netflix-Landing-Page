@@ -16,22 +16,122 @@
 
 .header__hero .hero__content form .form-group input:-webkit-autofill,
 .header__hero .hero__content form .form-group input:-webkit-autofill:hover,
-.header__hero .hero__content form .form-group input:-webkit-autofill:focus {
-  -webkit-text-fill-color: white !important;
-  -webkit-box-shadow: 0 0 0px 1000px #00000048 inset !important;
+.header__hero .hero__content form .form-group input:-webkit-autofill:focus,
+.header__hero .hero__content form .form-group input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #00000048 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.signup__input:-webkit-autofill,
+.signup__input:-webkit-autofill:hover,
+.signup__input:-webkit-autofill:focus,
+.signup__input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #0f0f0f inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .header__auth .btn:hover {
-    background-color: #a3161d;
+    background-color: #a3161d !important;
   }
 
   .header__hero .hero__content form .btn:hover {
-    background-color: #a3161d;
+    background-color: #a3161d !important;
   }
 
   .header__lang-wrapper .dropdown-menu .dropdown-item:hover {
     background-color: #2776e5 !important;
     color: #fff !important;
   }
+
+  .header__lang-wrapper .btn:hover {
+    background-color: #00000048 !important;
+  }
+
+  .signup__button:hover {
+    background-color: #a3161d !important;
+    color: #fff !important;
+  }
+}
+
+.header__lang-wrapper .btn:focus {
+  outline: 2px solid white;
+}
+
+.header__lang-wrapper .btn:focus,
+.header__lang-wrapper .btn:active,
+.header__lang-wrapper .btn[aria-expanded="true"] {
+  color: #ffffff !important;
+  background-color: #00000048 !important;
+  border-color: #808080b3 !important;
+  box-shadow: none !important;
+}
+
+.header__lang-wrapper .btn:focus i,
+.header__lang-wrapper .btn:focus svg {
+  color: #ffffff !important;
+}
+
+.header__lang-wrapper .dropdown-menu .dropdown-item:focus,
+.header__lang-wrapper .dropdown-menu .dropdown-item:active {
+  background-color: #2776e5 !important;
+  color: #ffffff !important;
+}
+
+.header__auth .header__sign-in:active {
+  background-color: #a3161d !important;
+  border-color: #a3161d !important;
+  box-shadow: none !important;
+}
+
+.header__auth .header__sign-in:focus-visible {
+  background-color: #a3161d !important;
+  border-color: #a3161d !important;
+  box-shadow: none !important;
+  outline: 2px solid white;
+}
+
+.header__hero .hero__content form .btn:active {
+  background-color: #a3161d !important;
+}
+
+.header__hero .hero__content form .form-group input:focus {
+  background-color: #00000048 !important;
+  color: white !important;
+  box-shadow: none !important;
+  border: 2px solid white !important;
+}
+
+.header__hero .hero__content form .form-group input:focus + label,
+.header__hero
+  .hero__content
+  form
+  .form-group
+  input:not(:placeholder-shown)
+  + label {
+  top: 5px;
+  transform: translateY(0);
+  font-size: 12px;
+}
+
+.header__hero .hero__content form .form-group input::placeholder {
+  color: #ffffffb3;
+  opacity: 1;
+}
+
+.signup__input:focus {
+  border: 2px solid white !important;
+}
+
+.signup__button:active {
+  background: #a3161d !important;
+}
+
+.signup__button:focus-visible {
+  background-color: #e50914 !important;
+  outline: 2px solid white;
 }
