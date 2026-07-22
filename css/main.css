@@ -56,6 +56,15 @@
     background-color: #a3161d !important;
     color: #fff !important;
   }
+
+  .footer__language-wrapper .dropdown-menu .dropdown-item:hover {
+    background-color: #2776e5 !important;
+    color: #fff !important;
+  }
+
+  .footer__language-wrapper .btn:hover {
+    background-color: #00000048 !important;
+  }
 }
 
 .header__lang-wrapper .btn:focus {
@@ -134,4 +143,28 @@
 .signup__button:focus-visible {
   background-color: #e50914 !important;
   outline: 2px solid white;
+}
+
+.footer__language-wrapper .btn:focus {
+  outline: 2px solid white;
+}
+
+.footer__language-wrapper .btn:focus,
+.footer__language-wrapper .btn:active,
+.footer__language-wrapper .btn[aria-expanded="true"] {
+  color: #ffffff !important;
+  background-color: #00000048 !important;
+  border-color: #808080b3 !important;
+  box-shadow: none !important;
+}
+
+.footer__language-wrapper .btn:focus i,
+.footer__language-wrapper .btn:focus svg {
+  color: #ffffff !important;
+}
+
+.footer__language-wrapper .dropdown-menu .dropdown-item:focus,
+.footer__language-wrapper .dropdown-menu .dropdown-item:active {
+  background-color: #2776e5 !important;
+  color: #ffffff !important;
 }

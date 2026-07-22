@@ -435,86 +435,109 @@ section .reasons__card-icon {
 }
 
 footer {
-  padding: 0 148px;
-  padding-bottom: 130px;
+  padding: 0 148px 6rem;
 }
 
-footer > div.first > p {
+.footer__contact {
   width: auto;
+  padding: 3px;
 }
 
-footer > div.first > p > a {
-  color: rgba(255, 255, 255, 0.7);
+.footer__contact a {
+  color: #ffffffb3;
 }
 
-footer > div.first > div.kol > nav {
-  margin-top: 36px;
+.footer__nav {
+  margin-top: 24px;
   margin-bottom: 14px;
 }
 
-footer > div.first > div.kol > nav > ul {
+.footer__list {
+  padding: 4px !important;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 36px;
 }
 
-footer > div.first > div.kol > nav > ul > li {
+.footer__item {
   display: flex;
   margin-top: 12px;
 }
 
-footer > div.first > div.kol > nav > ul > li > a {
-  color: rgba(255, 255, 255, 0.7);
+.footer__link {
+  color: #ffffffb3;
   font-size: 14px;
+  font-weight: 500;
 }
 
-footer > div.click > div.avl {
+.footer__language-wrapper {
   margin-top: 36px;
 }
 
-footer > div.click > div.avl > div.btn-group > button {
-  background-color: #0000008e;
-  font-size: 15px;
+.footer__language-wrapper .btn {
+  background-color: #0f0f0f;
+  font-size: 1rem;
   font-weight: 500;
-  padding: 4px 14px;
-  border-color: rgba(128, 128, 128, 0.7);
+  padding: 4px 14px 4px 12px;
+  margin: 3px;
+  height: 32px;
+  border-color: #808080b3;
+  cursor: default;
 }
 
-footer > div.click > div.avl > div.btn-group > button:focus {
-  border: 2px solid white;
+.footer__language-wrapper .dropdown-menu {
+  padding: 0px;
+  border-radius: 0px;
+  width: 100% !important;
+  min-width: 100% !important;
+  position: absolute !important;
+  inset: auto !important;
+  transform: none !important;
+  top: calc(100% + 0px) !important;
+  left: 0 !important;
+  right: auto !important;
+  margin: 0 !important;
 }
 
-footer > div.click > div.avl > div.btn-group > button > svg {
+.footer__language-wrapper .dropdown-menu.show {
+  display: block;
+}
+
+.footer__language-wrapper .dropdown-menu .dropdown-item {
+  text-align: center;
+  width: 100%;
+}
+
+.footer__language-wrapper .btn:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.footer__language-wrapper .btn svg {
   width: 1rem;
   height: 1rem;
-  bottom: 3px;
+  margin-right: 6px;
 }
 
-footer > div.click > div.avl > div.btn-group > button > i {
+.footer__language-wrapper .btn i {
   font-size: 10px;
-  bottom: 2px;
-  margin-left: 3rem;
+  margin-left: 12px;
+  margin-right: 4px;
+  top: 1px;
 }
 
-footer > div.once {
+.footer__country {
   margin-top: 36px;
 }
 
-footer > div.once > p {
-  color: rgba(255, 255, 255, 0.7);
+.footer__country p {
+  color: #ffffffb3;
   font-size: 14px;
 }
 
-footer > div.end {
-  margin-top: 36px;
-  margin-bottom: 1rem;
+.footer__recaptcha {
+  margin-top: 30px;
 }
 
-footer > div.end > span {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 13px;
-}
-
-footer > div.end > a {
-  color: #448ef4;
+.footer__recaptcha span {
+  color: #ffffff80;
   font-size: 13px;
 }
