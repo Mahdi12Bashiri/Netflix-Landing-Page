@@ -447,7 +447,7 @@ section .reasons__card-icon svg {
 .signup__button {
   background-color: #e50914 !important;
   font-size: 18px;
-  padding: 12px 24px;
+  padding: 8px 16px;
   height: 48px;
   flex-shrink: 0;
   margin-top: 1rem;
