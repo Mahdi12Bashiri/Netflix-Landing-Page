@@ -78,8 +78,7 @@ div.wrapper {
 }
 
 .header__bg {
-  height: 664px;
-  overflow: hidden;
+  height: 663px;
 }
 
 .header__bg::after {
@@ -93,7 +92,7 @@ div.wrapper {
     rgba(0, 0, 0, 0.4) 30%,
     rgba(0, 0, 0, 0.65) 50%,
     rgba(0, 0, 0, 0.8) 65%,
-    rgba(0, 0, 0, 1) 100%
+    #000000 100%
   );
 }
 
@@ -172,7 +171,7 @@ div.wrapper {
 
 .curve-divider {
   position: absolute;
-  bottom: 50px;
+  bottom: 51px;
   left: 0;
   width: 100%;
   height: 100px;
@@ -256,28 +255,54 @@ section {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  max-width: 132px;
-  background-color: black;
   padding: 4.8px 10px;
+  width: auto;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  width: 112px;
+  height: 156px;
   border-radius: 7px;
 }
 
-section > .trending {
+section .trending__swiper {
+  --swiper-navigation-color: #ff2d55;
+  --swiper-navigation-size: 40px;
+}
+
+section .trending__swiper .swiper-button-next,
+section .trending__swiper .swiper-button-prev {
+  color: #ff2d55;
+}
+
+section .trending__swiper .swiper-button-next:hover,
+section .trending__swiper .swiper-button-prev:hover {
+  color: #ff0033;
+}
+
+section .trending {
   position: relative;
   margin-top: -80px;
   z-index: 1;
   margin-bottom: 4rem;
+}
+
+section .trending__item {
+  position: relative;
+  transition: transform 0.35s ease;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+section .trending__item:hover {
+  transform: scale(1.05);
+  z-index: 5;
 }
 
 section .trending__title {
@@ -289,14 +314,11 @@ section .trending__slider {
 }
 
 section .trending__rank {
-  font-size: 60px;
+  font-size: 65px;
   position: absolute;
-  bottom: 60px;
-  left: 0px;
-}
-
-section .trending__rank:nth-of-type(2) {
-  left: 60px;
+  font-weight: 900;
+  bottom: -5px;
+  left: -10px;
 }
 
 section .reasons {
